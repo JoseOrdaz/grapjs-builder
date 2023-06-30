@@ -5,6 +5,8 @@
     <title>GrapesJS Preset Webpage</title>
     <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
     <script src="https://unpkg.com/grapesjs"></script>
+    <script src="https://unpkg.com/grapesjs-plugin-forms@2.0.5"></script>
+
     <style>
       body,
       html {
@@ -88,7 +90,10 @@
           container: '#gjs',
           fromElement: true,
 
-          plugins: ['grapesjs-preset-webpage'],
+          plugins: ['grapesjs-preset-webpage',
+          'grapesjs-plugin-forms',
+
+        ],
           pluginsOpts: {
             'grapesjs-preset-webpage': {}
           }
